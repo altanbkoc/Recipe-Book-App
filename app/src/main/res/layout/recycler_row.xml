@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/kahve"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recyclerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_back2"
+        android:fontFamily="sans-serif-light"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="67dp" />
+</LinearLayout>

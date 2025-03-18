@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acikkahve"
+    tools:context=".view.DetayFragment">
+
+
+    <TextView
+        android:id="@+id/yemekBaslik"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/text_back2"
+        android:fontFamily="cursive"
+        android:padding="5dp"
+        android:text="Patates Kızartması"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack" />
+
+    <ImageView
+        android:id="@+id/yemekDetayResim"
+        android:layout_width="185dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekBaslik" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Malzemeler"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekBaslik" />
+
+    <ScrollView
+        android:layout_width="111dp"
+        android:layout_height="147dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:id="@+id/detayMalzemeler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_back2"
+            android:fontFamily="sans-serif-light"
+            android:padding="5dp"
+            android:text="Patates Yağ"
+            android:textSize="24sp" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekDetayResim">
+
+        <TextView
+            android:id="@+id/detayTarif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_back2"
+            android:fontFamily="sans-serif-light"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonDetaySil"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/kahve"
+        android:fontFamily="sans-serif-light"
+        android:onClick="yemekSil"
+        android:text="sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/ic_launcher_background"
+        android:contentDescription="geri button"
+        android:onClick="geriGit"
+        android:src="@drawable/backspace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
